@@ -13,12 +13,13 @@
   <!-- BEGIN BODY -->
   <body>
     <div id="page">
-    
+	  
+	  <!-- BEGIN HEADER -->
       <header>
         <h1 class="title">Cloud Computing</h1>
         <h2 class="subtitle">What You Need to Know!</h2>
         
-        <!-- Navigation -->
+        <!-- NAVIGATION -->
         <nav>
           <div class="navigate">
             <a href="#cc-intro">Overview</a>
@@ -35,181 +36,198 @@
         </nav>
         
       </header>
-
+	  <!-- END HEADER -->
+	  
+      <!-- BEGIN MAIN CONTENT -->
       <div id="content">
-        <p id="cc-intro">
-          Cloud computing refers to a wide range of computing infrastructure services--from storage to software--that
-          are delivered over the internet to a customer (normally a company). These services used to be in the scope of
-          a company's IT department. But with cloud computing, these services can be handled by a third-party so
-          companies can focus on their core business.
-        </p>
+	  
+		<!-- Overview -->
+		<p id="cc-intro">
+		  Cloud computing refers to a wide range of computing infrastructure services--from storage to software--that
+		  are delivered over the internet to a customer (normally a company). These services used to be in the scope of
+		  a company's IT department. But with cloud computing, these services can be handled by a third-party so
+		  companies can focus on their core business.
+		</p>
+		
+		<!-- Distribution Types -->
+		<div  id="cc-groups">
+			<h3>Models of Cloud Computing</h3>
+			<p>Cloud Computing Services are broken into three main groups:</p>
+			<ul>
+			  <li class="dist_type">Infrastructure as a Service (IaaS)</li>
+			  <ul>
+				<li>Description: This is the lowest level of cloud computing. IaaS provides servers and storage,
+				  networking and security. Think of it like a company's traditional data center, but completely virtual.
+				  The customer accesses these services through a user interface. Examples include Microsoft Azure or Amazon
+				  Web Services.
+				</li>
+				<li>Benefits:</li>
+				<ul>
+				  <li>You can purchase services individually as you need them. This makes IaaS scalable with
+					businesses of all sizes</li>
+				  <li><a href="https://azure.microsoft.com/en-us/overview/what-is-iaas/">Microsoft's page on IaaS</a> states
+					that new services can be deployed in less than a day. When you've decided you need a new
+					component of IaaS, you can have it up and running that same day, rather than waiting weeks to set up
+					local resources.</li>
+				  <li>Disaster recovery with the cloud is significantly easier than with a traditional data center. In an
+					 <a href="http://web.onlinetech.com/disaster-recovery-answers-all-in-one-place">excerpt from a white
+					   paper on disaster recovery in cloud computing</a>, Online Tech writes that
+					your infrastructure "...can be safely and accurately transferred from one data center to a second
+					data center without the burden of reloading each component of the server. This can dramatically
+					reduce recovery times compared to conventional (non-virtualized) disaster recovery approaches..."
+				  </li>
+				</ul>
+			  </ul>
+			  <li  class="dist_type">Platform as a Service (PaaS)</li>
+			  <ul>
+				<li>Description: This is the mid-tier of cloud computing. Along with all IaaS components, PaaS offers a
+				  suite of services to support a web application's entire lifecycle including development tools, database
+				  management, and business analytics.</li>
+				<li>Benefits:</li>
+				<ul>
+				  <li>All the benefits of IaaS plus...</li>
+				  <li>Reduces coding time. According to
+					<a href="https://azure.microsoft.com/en-us/overview/what-is-paas/">Microsoft's page on PaaS</a>, PaaS
+					tools come with "pre-coded application components built into the platform, such as workflow,
+					directory services, security features, search, and so on."
+				  </li>
+				  <li>Since the development environment is virtual, you and your team can work on your application remotely</li>
+				  <li>All the tools you need to develop and manage a web app are included in PaaS</li>
+				</ul>
+			  </ul>
+			  <li  class="dist_type">Software as a Service (SaaS)</li>
+			  <ul>
+				<li>Description: This is the most holistic version of cloud computing and also the most common. In
+				  addition to the services described in IaaS and PaaS, SaaS provides hosted applications, such as
+				  email, calendars, and customer Relationship Management (CRM).</li>
+				<li>Benefits:</li>
+				<ul>
+				  <li>All the benefits of IaaS and PaaS plus...</li>
+				  <li>Most applications can be run from the web, making your work accessible anywhere with an
+					internet connection</li>
+				  <li>The customer isn't responsible for updating the software</li>
+				</ul>
+			  </ul>
+			</ul>
+		        
+			<p>
+			  When it comes to asking "which type of cloud computing is right for me?", what you should really ask
+			  yourself is, "how much of your company's IT do you want controlled by a third-party vendor?" <a
+				href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">This
+			  graphic from Stephen Watts of <i>bmc blog</i> breaks down your options:</a>
+			</p>
+			<img src="iaas-paas-saas-comparison.jpg" alt="IaaS vs PaaS vs SaaS" width="600px"/>
+			<p>
+			  If your needs are purely IT infrastructure based, go with an IaaS provider like Microsoft Azure or Digital
+			  Ocean. If you're concerned with building and deploying web apps quickly, without having to worry about
+			  software updates, look into PaaS providers like Heroku or Apache Stratos. If you want your company to deal
+			  with as little IT as possible, SaaS is right for you. <a
+				href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">Watts
+			  lists examples of all the different cloud computing types.</a> Some examples of SaaS providers he mentions are
+			  Salesforce (CRM), Concur (Travel/Expense management), and Dropbox (file hosting).
+			</p>
+		</div>
+		<!-- End Distribution Types -->
 
-        <p id="cc-groups">Cloud Computing Services are broken into three main groups:</p>
-        <ul>
-          <li>Infrastructure as a Service (IaaS)</li>
-          <ul>
-            <li>Description: This is the lowest level of cloud computing. IaaS provides servers and storage,
-              networking and security. Think of it like a company's traditional data center, but completely virtual.
-              The customer accesses these services through a user interface. For example. Microsoft Azure or Amazon
-              Web Services.
-            </li>
-            <li>Benefits:</li>
-            <ul>
-              <li>You can purchase services individually as you need them. This makes IaaS scalable with
-                businesses of all sizes</li>
-              <li><a href="https://azure.microsoft.com/en-us/overview/what-is-iaas/">Microsoft's page on IaaS</a> states
-                that new services can be deployed in less than a day. When you've decided you need a new
-                component of IaaS, you can have it up and running that same day, rather than waiting weeks to set up
-                local resources.</li>
-              <li>Disaster recovery with the cloud is significantly easier than with a traditional data center. In an
-                 <a href="http://web.onlinetech.com/disaster-recovery-answers-all-in-one-place">excerpt from a white
-                   paper on disaster recovery in cloud computing</a>, Online Tech writes that
-                your infrastructure "...can be safely and accurately transferred from one data center to a second
-                data center without the burden of reloading each component of the server. This can dramatically
-                reduce recovery times compared to conventional (non-virtualized) disaster recovery approaches..."
-              </li>
-            </ul>
-          </ul>
-          <li>Platform as a Service (PaaS)</li>
-          <ul>
-            <li>Description: This is the mid-tier of cloud computing. Along with all IaaS components, PaaS offers a
-              suite of services to support a web application's entire lifecycle including development tools, database
-              management, and business analytics.</li>
-            <li>Benefits:</li>
-            <ul>
-              <li>All the benefits of IaaS plus...</li>
-              <li>Reduces coding time. According to
-                <a href="https://azure.microsoft.com/en-us/overview/what-is-paas/">Microsoft's page on PaaS</a>, PaaS
-                tools come with "pre-coded application components built into the platform, such as workflow,
-                directory services, security features, search, and so on."
-              </li>
-              <li>Since the development environment is virtual, you and your team can work on your application remotely</li>
-              <li>All the tools you need to develop and manage a web app are included in PaaS</li>
-            </ul>
-          </ul>
-          <li>Software as a Service (SaaS)</li>
-          <ul>
-            <li>Description: This is the most holistic version of cloud computing and also the most common. In
-              addition to the services described in IaaS and PaaS, SaaS provides hosted applications, such as
-              email, calendars, and customer Relationship Management (CRM).</li>
-            <li>Benefits:</li>
-            <ul>
-              <li>All the benefits of IaaS and PaaS plus...</li>
-              <li>Most applications can be run from the web, making your work accessible anywhere with an
-                internet connection</li>
-              <li>The customer isn't responsible for updating the software</li>
-            </ul>
-          </ul>
-        </ul>
-        <p>
-          When it comes to asking "which type of cloud computing is right for me?", what you should really ask
-          yourself is, "how much of your company's IT do you want controlled by a third-party vendor?" <a
-            href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">This
-          graphic from Stephen Watts of <i>bmc blog</i> breaks down your options:</a>
-        </p>
-        <img src="iaas-paas-saas-comparison.jpg" alt="IaaS vs PaaS vs SaaS" width="600px"/>
-        <p>
-          If your needs are purely IT infrastructure based, go with an IaaS provider like Microsoft Azure or Digital
-          Ocean. If you're concerned with building and deploying web apps quickly, without having to worry about
-          software updates, look into PaaS providers like Heroku or Apache Stratos. If you want your company to deal
-          with as little IT as possible, SaaS is right for you. <a
-            href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">Watts
-          lists examples of all the different cloud computing types.</a> Some examples of SaaS providers he mentions are
-          Salesforce (CRM), Concur (Travel/Expense management), and Dropbox (file hosting).
-        </p>
+		<!-- Cloud Deployments -->
+		<div id="cc-depl">
+			<h3>Models for Implementing Cloud Computing</h3>
+			<p>Cloud Computing services are deployed in one of four ways:</p>
+			<ul>
+			  <li>Public Cloud</li>
+			  <ul>
+				<li>Description: Public clouds are available to the public and data are created and stored on third-party
+				  servers. As server infrastructure belongs to service providers that manage and administer resources,
+				  the need for user companies to buy and maintain their own hardware is eliminated.
+				  Provider companies offer resources as a service on a free of charge or pay-per-use basis via an
+				  internet connection. Users can scale them when required.</li>
+				<li>Benefits:</li>
+				  <ul>
+					<li>Easy access to data,setup, and use</li>
+					<li>Flexibility to add and reduce capacity</li>
+					<li>Cost-effectiveness</li>
+					<li>Continuous operation time</li>
+					<li>Full maintenance></li>
+					<li>No need for software</li>
+				  </ul>
+			  </ul>
+			  <li>Private Cloud</li>
+			  <ul>
+				<li>Description: The difference between public and private clouds is little from the technical point of
+				  view, as their designs are very similar. However, unlike in the public cloud, only one specific company
+				  owns a private cloud, which is why it is also called an internal or corporate cloud. Since these data
+				  center architectures reside within the firewall, they provide enhanced security. Even though one
+				  organization runs its workloads on a private basis, a third party can also manage it, and the server
+				  can be hosted externally or on premises of the user company.</li>
+				<li>Benefits:</li>
+				  <ul>
+					<li>Individual development</li>
+					<li>Storage and network components are customizable</li>
+					<li>High control over the corporate information</li>
+					<li>High security,privacy and reliability</li>
+				  </ul>
+			  </ul>
+			  <li>Community Cloud</li>
+			  <ul>
+				<li>Description: A community cloud deployment model is similar to a private one to a large extent; the
+				  only difference is the set of users. While a private type implies that only one company owns the
+				  server, in the case of a community cloud, several organizations with similar backgrounds share the same
+				  infrastructure and related resources.
+				</li>
+				<li>Benefits:</li>
+				  <ul>
+					<li>Cost reduction</li>
+					<li>Improved security,privacy and reliability</li>
+					<li>Ease of data sharing and collaboration</li>
+				  </ul>
 
-
-        <p id="cc-depl">Cloud Computing services are deployed in one of four ways:</p>
-        <ul>
-          <li>Public Cloud</li>
-          <ul>
-            <li>Description: Public clouds are available to the public and data are created and stored on third-party
-              servers. As server infrastructure belongs to service providers that manage and administer resources,
-              the need for user companies to buy and maintain their own hardware is eliminated.
-              Provider companies offer resources as a service on a free of charge or pay-per-use basis via an
-              internet connection. Users can scale them when required.</li>
-            <li>Benefits:</li>
-              <ul>
-                <li>Easy access to data,setup, and use</li>
-                <li>Flexibility to add and reduce capacity</li>
-                <li>Cost-effectiveness</li>
-                <li>Continuous operation time</li>
-                <li>Full maintenance></li>
-                <li>No need for software</li>
-              </ul>
-          </ul>
-          <li>Private Cloud</li>
-          <ul>
-            <li>Description: The difference between public and private clouds is little from the technical point of
-              view, as their designs are very similar. However, unlike in the public cloud, only one specific company
-              owns a private cloud, which is why it is also called an internal or corporate cloud. Since these data
-              center architectures reside within the firewall, they provide enhanced security. Even though one
-              organization runs its workloads on a private basis, a third party can also manage it, and the server
-              can be hosted externally or on premises of the user company.</li>
-            <li>Benefits:</li>
-              <ul>
-                <li>Individual development</li>
-                <li>Storage and network components are customizable</li>
-                <li>High control over the corporate information</li>
-                <li>High security,privacy and reliability</li>
-              </ul>
-          </ul>
-          <li>Community Cloud</li>
-          <ul>
-            <li>Description: A community cloud deployment model is similar to a private one to a large extent; the
-              only difference is the set of users. While a private type implies that only one company owns the
-              server, in the case of a community cloud, several organizations with similar backgrounds share the same
-              infrastructure and related resources.
-            </li>
-            <li>Benefits:</li>
-              <ul>
-                <li>Cost reduction</li>
-                <li>Improved security,privacy and reliability</li>
-                <li>Ease of data sharing and collaboration</li>
-              </ul>
-
-          </ul>
-          <li>Hybrid Cloud</li>
-          <ul>
-            <li>Description:a hybrid cloud encompasses the best features of the above-mentioned cloud computing
-              deployment models--public, private and community. It allows companies to mix and match facets of all
-              three types that best suit their requirements. As an example, a company can balance its load by
-              locating mission-critical workloads on a secure private cloud and deploy less sensitive ones to a
-              public cloud. It not only safeguards and controls strategically important assets but does so in
-              the most cost effective way possible for each specific case.</li>
-            <li>Benefits:</li>
-              <ul>
-                <li>Improved security and privacy</li>
-                <li>Enhanced scalability and flexibility</li>
-                <li>Reasonable price</li>
-              </ul>
-          </ul>
-        </ul>
-
-        <h3 id="resources">Resources</h3>
-        <p>For more information on cloud computing, check out these great resources:</p>
-        <ul>
-          <li><a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/">Microsoft Azure - What
-             is cloud computing?</a>&mdash;Provides an overview of cloud computing including types and deployments</li>
-          <li><a href="https://azure.microsoft.com/en-us/overview/what-is-iaas/">Microsoft Azure - What is IaaS?</a>
-            &mdash;Provides an overview of the IaaS cloud type
-          </li>
-          <li><a href="https://azure.microsoft.com/en-us/overview/what-is-paas/">Microsoft Azure - What is
-            PaaS?</a>&mdash;Provides an overview of the PaaS cloud type
-          </li>
-          <li><a href="https://azure.microsoft.com/en-us/overview/what-is-saas/">Microsoft Azure - What is
-            SaaS?</a>&mdash;Provides an overview of the SaaS cloud type
-          </li>
-          <li><a
-              href="http://www.onlinetech.com/resources/references/benefits-of-disaster-recovery-in-cloud-computing">
-            Online Tech - Benefits of Disaster Recovery in Cloud Computing</a>&mdash;Excerpt of a white paper on
-            disaster
-          recovery. You can download the whole white paper at this link</li>
-          <li><a href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">
-            SaaS vs PaaS vs IaaS: What's the Difference and How to Choose</a>&mdash;Provides an overview of cloud
-            computing types and their differences. Includes a very informative graphic to illustrate the
-            differences</li>
-        </ul>
+			  </ul>
+			  <li>Hybrid Cloud</li>
+			  <ul>
+				<li>Description:a hybrid cloud encompasses the best features of the above-mentioned cloud computing
+				  deployment models--public, private and community. It allows companies to mix and match facets of all
+				  three types that best suit their requirements. As an example, a company can balance its load by
+				  locating mission-critical workloads on a secure private cloud and deploy less sensitive ones to a
+				  public cloud. It not only safeguards and controls strategically important assets but does so in
+				  the most cost effective way possible for each specific case.</li>
+				<li>Benefits:</li>
+				  <ul>
+					<li>Improved security and privacy</li>
+					<li>Enhanced scalability and flexibility</li>
+					<li>Reasonable price</li>
+				  </ul>
+			  </ul>
+			</ul>
+		</div>
+		<!-- End Cloud Deployments -->
+		
+		<!-- Resources -->
+		<div id="resources">
+			<h3>Resources</h3>
+			<p>For more information on cloud computing, check out these great resources:</p>
+			<ul>
+			  <li><a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/">Microsoft Azure - What
+				 is cloud computing?</a>&mdash;Provides an overview of cloud computing including types and deployments</li>
+			  <li><a href="https://azure.microsoft.com/en-us/overview/what-is-iaas/">Microsoft Azure - What is IaaS?</a>
+				&mdash;Provides an overview of the IaaS cloud type
+			  </li>
+			  <li><a href="https://azure.microsoft.com/en-us/overview/what-is-paas/">Microsoft Azure - What is
+				PaaS?</a>&mdash;Provides an overview of the PaaS cloud type
+			  </li>
+			  <li><a href="https://azure.microsoft.com/en-us/overview/what-is-saas/">Microsoft Azure - What is
+				SaaS?</a>&mdash;Provides an overview of the SaaS cloud type
+			  </li>
+			  <li><a
+				  href="http://www.onlinetech.com/resources/references/benefits-of-disaster-recovery-in-cloud-computing">
+				Online Tech - Benefits of Disaster Recovery in Cloud Computing</a>&mdash;Excerpt of a white paper on
+				disaster
+			  recovery. You can download the whole white paper at this link</li>
+			  <li><a href="https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/">
+				SaaS vs PaaS vs IaaS: What's the Difference and How to Choose</a>&mdash;Provides an overview of cloud
+				computing types and their differences. Includes a very informative graphic to illustrate the
+				differences</li>
+			</ul>
+		</div>
       </div>
     </div>
   </body>
